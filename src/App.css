@@ -1,0 +1,262 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Navmovies.css */
+
+.navbar-custom {
+  background-color: #1c1c1c;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand-custom {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #ffc107 !important;
+}
+
+.nav-links-custom {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-link-custom {
+  color: white !important;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #ffc107 !important;
+}
+
+.form-tools {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+/* Home Component Styles */
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+.home-logo {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.home-title {
+  color: #ff4d4d;
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.home-subtitle {
+  color: #00aaff;
+  font-size: 1.5rem;
+}
+
+
+#fifi .MuiSvgIcon-root{
+  color: white;
+}
+.moviesnext-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 50px;
+  flex-wrap: wrap;
+  background-color: #111;
+  color: white;
+  min-height: 100vh;
+}
+
+.left-side {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.left-side h1 {
+  color: #e50914;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.left-side img {
+  width: 280px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin-bottom: 15px;
+}
+
+.left-side .rating {
+  margin: 10px 0;
+}
+
+.left-side p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 0 15px;
+  color: #ddd;
+}
+
+.right-side {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.right-side iframe {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.right-side button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.right-side button:hover {
+  background-color: #b0060e;
+}
+/* Movies.css */
+/* Container de la liste des films */
+.listmovies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+/* Style de chaque carte de film */
+.cardmovie {
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+/* Hover effect stylé */
+.cardmovie:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.cardmovie img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Body styling */
+.cardmovie .card-body {
+  padding: 16px;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Titre + description container */
+.cardmovie .cardmovie-title {
+  margin-bottom: 10px;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+/* Titre */
+.cardmovie .cardmovie-title .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Description */
+.cardmovie .cardmovie-title .card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Rating */
+.cardmovie .MuiRating-root {
+  margin-top: auto;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .cardmovie {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cardmovie {
+    width: 45%;
+  }
+}
